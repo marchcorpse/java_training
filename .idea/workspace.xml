@@ -34,10 +34,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Lesson2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-263">
+            <state relative-caret-position="17">
               <caret line="21" column="59" selection-start-line="21" selection-start-column="59" selection-end-line="21" selection-end-column="59" />
               <folding>
                 <element signature="method#printArray#0;class#Lesson2#0" />
@@ -54,6 +54,27 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Lesson3.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="98" column="5" lean-forward="true" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#main#0;class#Lesson3#0" />
+                <element signature="method#initMap#0;class#Lesson3#0" />
+                <element signature="method#printMap#0;class#Lesson3#0" />
+                <element signature="method#humanTurn#0;class#Lesson3#0" />
+                <element signature="method#computerTurn#0;class#Lesson3#0" />
+                <element signature="method#isCellValid#0;class#Lesson3#0" />
+                <element signature="method#isEndGame#0;class#Lesson3#0" />
+                <element signature="method#checkWin#0;class#Lesson3#0" />
+                <element signature="method#isMapFull#0;class#Lesson3#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -63,50 +84,54 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/MyClass.java" />
         <option value="$PROJECT_DIR$/src/Lesson1.java" />
         <option value="$PROJECT_DIR$/src/Lesson2.java" />
+        <option value="$PROJECT_DIR$/src/Lesson3.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="54" />
-    <option name="y" value="-8" />
-    <option name="width" value="1874" />
-    <option name="height" value="1096" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="416" />
+    <option name="y" value="170" />
+    <option name="width" value="1346" />
+    <option name="height" value="688" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="JavaTraining" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaTraining" type="462c0819:PsiDirectoryNode" />
+              <item name="java_training" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java_training" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="JavaTraining" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaTraining" type="462c0819:PsiDirectoryNode" />
+              <item name="java_training" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java_training" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547371260458" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548088869176" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -120,7 +145,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Lesson2">
+  <component name="RunManager" selected="Application.Lesson3">
     <configuration name="Lesson1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Lesson1" />
       <module name="JavaTraining" />
@@ -135,6 +160,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Lesson3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Lesson3" />
+      <module name="JavaTraining" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MyClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MyClass" />
       <module name="JavaTraining" />
@@ -144,6 +176,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Lesson3" />
         <item itemvalue="Application.Lesson2" />
         <item itemvalue="Application.Lesson1" />
         <item itemvalue="Application.MyClass" />
@@ -165,16 +198,27 @@
       <workItem from="1547317766019" duration="789000" />
       <workItem from="1547365111956" duration="5989000" />
       <workItem from="1547379153729" duration="119000" />
+      <workItem from="1548080372551" duration="9015000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26457000" />
+    <option name="totallyTimeSpent" value="35472000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
+    <frame x="54" y="-8" width="1874" height="1096" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1940463" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19625138" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -184,16 +228,16 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2502596" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2502596" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49889746" weight="0.32917964" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49944875" weight="0.32917964" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5011025" side_tool="true" weight="0.32917964" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32917964" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -231,7 +275,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Lesson2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-263">
+        <state relative-caret-position="17">
           <caret line="21" column="59" selection-start-line="21" selection-start-column="59" selection-end-line="21" selection-end-column="59" />
           <folding>
             <element signature="method#printArray#0;class#Lesson2#0" />
@@ -243,6 +287,25 @@
             <element signature="method#Task5#0;class#Lesson2#0" />
             <element signature="method#Task6#0;class#Lesson2#0" />
             <element signature="method#Task7#0;class#Lesson2#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Lesson3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="98" column="5" lean-forward="true" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#main#0;class#Lesson3#0" />
+            <element signature="method#initMap#0;class#Lesson3#0" />
+            <element signature="method#printMap#0;class#Lesson3#0" />
+            <element signature="method#humanTurn#0;class#Lesson3#0" />
+            <element signature="method#computerTurn#0;class#Lesson3#0" />
+            <element signature="method#isCellValid#0;class#Lesson3#0" />
+            <element signature="method#isEndGame#0;class#Lesson3#0" />
+            <element signature="method#checkWin#0;class#Lesson3#0" />
+            <element signature="method#isMapFull#0;class#Lesson3#0" />
           </folding>
         </state>
       </provider>
