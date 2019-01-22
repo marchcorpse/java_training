@@ -13,7 +13,8 @@ public class Lesson3 {
     private static Scanner scanner = new Scanner(System.in);
     private static Random random = new Random();
 
-    private static final boolean SILLY_MODE = true;
+    private static final boolean SILLY_MODE = false;
+    private static final int aiLevel = 2;
 
     public static void main(String[] args) {
         initMap();
@@ -25,7 +26,7 @@ public class Lesson3 {
                 break;
             }
 
-            computerTurn();
+            aiShot();
             if(isEndGame(DOT_O)){
                 break;
             }
@@ -69,21 +70,94 @@ public class Lesson3 {
     private static void computerTurn() {
         int x = -1;
         int y = -1;
+        boolean computerWin = false;
 
-        if(SILLY_MODE) {
+        if (SILLY_MODE) {
             do {
                 y = random.nextInt(SIZE);
                 x = random.nextInt(SIZE);
             }
-            while (isCellValid(x, y));
+            while (!isCellValid(x, y));
+            map[y][x] = DOT_O;
+            System.out.println("Компьютер выбрал ячейку с координатами: " + (y + 1) + " " + (x + 1));
         }
-        else {
-
+        else{
+            for (int i = 0; i < SIZE; i++){
+                    for(int j = 0; j < SIZE; j++){
+                        if(isCellValid(i, j)){
+                    }
+                }
+            }
         }
-        map[y][x] = DOT_O;
-        System.out.println("Компьютер выбрал ячейку с координатами: " + (y+1) +" "+ (x+1));
-
+    }
+    public static void aiShot()
+    {
+        int x = -1;
+        int y = -1;
+        boolean ai_win = false;
+        boolean user_win = false;
+        // aiLevel = 2
+        // Находим выигрышный ход
+        if (aiLevel == 2)
+        {
+            for (int i = 0; i < SIZE; i++)
+            {
+                for (int j = 0; j < SIZE; j++)
+                {
+                    if (isCellValid(i, j))
+                    {
+                        map[i][j] = DOT_O;
+                        if (checkWin(DOT_O))
+                        {
+                            x = i;
+                            y = j;
+                            ai_win = true;
+                        }
+                        else {
+                            map[i][j] = DOT_EMPTY;
+                        }
+                    }
+                }
+            }
         }
+        // aiLevel = 1
+        // Блокировка хода пользователя, если он побеждает на следующем ходу
+        else if (aiLevel > 0)
+        {
+            if (!ai_win)
+            {
+                for (int i = 0; i < SIZE; i++)
+                {
+                    for (int j = 0; j < SIZE; j++)
+                    {
+                        if (isCellValid(i, j))
+                        {
+                            map[i][j] = DOT_X;
+                            if (checkWin(DOT_X))
+                            {
+                                x = i;
+                                y = j;
+                                user_win = true;
+                            }
+                            map[i][j] = DOT_EMPTY;
+                        }
+                    }
+                }
+            }
+        }
+        // aiLevel = 0
+        if (!ai_win && !user_win)
+        {
+            do
+            {
+                Random rnd = new Random();
+                x = rnd.nextInt(SIZE);
+                y = rnd.nextInt(SIZE);
+            }
+            while (!isCellValid(x, y));
+        }
+        map[x][y] = DOT_O;
+    }
     private static boolean isCellValid(int x, int y) {
         boolean result = true;
 
@@ -91,7 +165,7 @@ public class Lesson3 {
             result = false;
         }
 
-        if (map[y][x] != DOT_EMPTY) {
+        else if (map[y][x] != DOT_EMPTY) {
             result = false;
         }
 
@@ -142,3 +216,11 @@ public class Lesson3 {
         return result;
     }
 }
+
+//(map[i - 1][j] == DOT_O) || (map[i - 1][j] == DOT_O) ||
+//        (map[i - 1][j] == DOT_O) || (map[i - 1][j] == DOT_O) ||
+//        (map[i - 1][j] == DOT_O) || (map[i - 1][j] == DOT_O) ||
+//        (map[i - 1][j] == DOT_O) || (map[i - 1][j] == DOT_O))) {
+//        map[i][j] = DOT_O;
+//        System.out.println("Компьютер выбрал ячейку с координатами: " + (i + 1) + " " + (j + 1));
+//        break;
