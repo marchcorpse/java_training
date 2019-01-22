@@ -13,12 +13,11 @@ public class Lesson3 {
     private static Scanner scanner = new Scanner(System.in);
     private static Random random = new Random();
 
-    private static final boolean SILLY_MODE = false;
-    private static final int aiLevel = 2;
+    private static final boolean SILLY_MODE = true;
 
     public static void main(String[] args) {
         initMap();
-        printMap();
+
 
         while(true){
             humanTurn();
@@ -26,7 +25,7 @@ public class Lesson3 {
                 break;
             }
 
-            aiShot();
+            computerTurn();
             if(isEndGame(DOT_O)){
                 break;
             }
@@ -81,82 +80,7 @@ public class Lesson3 {
             map[y][x] = DOT_O;
             System.out.println("Компьютер выбрал ячейку с координатами: " + (y + 1) + " " + (x + 1));
         }
-        else{
-            for (int i = 0; i < SIZE; i++){
-                    for(int j = 0; j < SIZE; j++){
-                        if(isCellValid(i, j)){
-                    }
-                }
-            }
-        }
-    }
-    public static void aiShot()
-    {
-        int x = -1;
-        int y = -1;
-        boolean ai_win = false;
-        boolean user_win = false;
-        // aiLevel = 2
-        // Находим выигрышный ход
-        if (aiLevel == 2)
-        {
-            for (int i = 0; i < SIZE; i++)
-            {
-                for (int j = 0; j < SIZE; j++)
-                {
-                    if (isCellValid(i, j))
-                    {
-                        map[i][j] = DOT_O;
-                        if (checkWin(DOT_O))
-                        {
-                            x = i;
-                            y = j;
-                            ai_win = true;
-                        }
-                        else {
-                            map[i][j] = DOT_EMPTY;
-                        }
-                    }
-                }
-            }
-        }
-        // aiLevel = 1
-        // Блокировка хода пользователя, если он побеждает на следующем ходу
-        else if (aiLevel > 0)
-        {
-            if (!ai_win)
-            {
-                for (int i = 0; i < SIZE; i++)
-                {
-                    for (int j = 0; j < SIZE; j++)
-                    {
-                        if (isCellValid(i, j))
-                        {
-                            map[i][j] = DOT_X;
-                            if (checkWin(DOT_X))
-                            {
-                                x = i;
-                                y = j;
-                                user_win = true;
-                            }
-                            map[i][j] = DOT_EMPTY;
-                        }
-                    }
-                }
-            }
-        }
-        // aiLevel = 0
-        if (!ai_win && !user_win)
-        {
-            do
-            {
-                Random rnd = new Random();
-                x = rnd.nextInt(SIZE);
-                y = rnd.nextInt(SIZE);
-            }
-            while (!isCellValid(x, y));
-        }
-        map[x][y] = DOT_O;
+        else{ }
     }
     private static boolean isCellValid(int x, int y) {
         boolean result = true;
@@ -216,11 +140,3 @@ public class Lesson3 {
         return result;
     }
 }
-
-//(map[i - 1][j] == DOT_O) || (map[i - 1][j] == DOT_O) ||
-//        (map[i - 1][j] == DOT_O) || (map[i - 1][j] == DOT_O) ||
-//        (map[i - 1][j] == DOT_O) || (map[i - 1][j] == DOT_O) ||
-//        (map[i - 1][j] == DOT_O) || (map[i - 1][j] == DOT_O))) {
-//        map[i][j] = DOT_O;
-//        System.out.println("Компьютер выбрал ячейку с координатами: " + (i + 1) + " " + (j + 1));
-//        break;
