@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3ffa7f7-b2f2-497b-a083-77b1faa0049b" name="Default Changelist" comment="">
+    <list default="true" id="e3ffa7f7-b2f2-497b-a083-77b1faa0049b" name="Default Changelist" comment="new structure">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JavaTraining/Lesson3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaTraining/Lesson3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Lesson3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lesson3.java" afterDir="false" />
@@ -16,20 +16,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Lesson3.java">
+        <entry file="file://$PROJECT_DIR$/src/Lesson4/MainClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="79" column="25" lean-forward="true" selection-start-line="79" selection-start-column="25" selection-end-line="79" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#initMap#0;class#Lesson3#0" />
-                <element signature="method#printMap#0;class#Lesson3#0" />
-                <element signature="method#humanTurn#0;class#Lesson3#0" />
-                <element signature="method#isCellValid#0;class#Lesson3#0" />
-                <element signature="method#isEndGame#0;class#Lesson3#0" />
-                <element signature="method#checkWin#0;class#Lesson3#0" />
-                <element signature="method#isMapFull#0;class#Lesson3#0" />
-              </folding>
+            <state relative-caret-position="408">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Lesson4/Employee.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="115" selection-start-line="17" selection-start-column="115" selection-end-line="17" selection-end-column="115" />
             </state>
           </provider>
         </entry>
@@ -44,6 +43,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -53,11 +53,13 @@
         <option value="$PROJECT_DIR$/src/Lesson1.java" />
         <option value="$PROJECT_DIR$/src/Lesson2.java" />
         <option value="$PROJECT_DIR$/src/Lesson3.java" />
+        <option value="$PROJECT_DIR$/src/Lesson4/Employee.java" />
+        <option value="$PROJECT_DIR$/src/Lesson4/MainClass.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="984" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="55" />
     <option name="width" value="943" />
     <option name="height" value="1087" />
   </component>
@@ -66,6 +68,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -78,19 +81,30 @@
               <item name="java_training" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="java_training" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java_training" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Lesson4" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548167445943" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Рабочий стол/XO_prog" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548577890396" />
+    <property name="last_opened_file_path" value="C:/Program Files/Git/bin/git.exe" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\march\OneDrive\Документы\GitHub\java_training\src\Lesson1" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -104,24 +118,37 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Lesson3">
+  <component name="RunManager" selected="Application.MainClass">
     <configuration name="Lesson1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Lesson1" />
+      <option name="MAIN_CLASS_NAME" value="Lesson1.Lesson1" />
       <module name="JavaTraining" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="Lesson2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Lesson2" />
+      <option name="MAIN_CLASS_NAME" value="Lesson2.Lesson2" />
       <module name="JavaTraining" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="Lesson3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Lesson3" />
+      <option name="MAIN_CLASS_NAME" value="Lesson3.Lesson3" />
       <module name="JavaTraining" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Lesson4.MainClass" />
+      <module name="JavaTraining" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Lesson4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -138,9 +165,11 @@
       <item itemvalue="Application.Lesson2" />
       <item itemvalue="Application.Lesson3" />
       <item itemvalue="Application.MyClass" />
+      <item itemvalue="Application.MainClass" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MainClass" />
         <item itemvalue="Application.Lesson3" />
         <item itemvalue="Application.Lesson2" />
         <item itemvalue="Application.Lesson1" />
@@ -165,12 +194,13 @@
       <workItem from="1547379153729" duration="119000" />
       <workItem from="1548080372551" duration="9015000" />
       <workItem from="1548130023937" duration="11503000" />
-      <workItem from="1548165444503" duration="1874000" />
+      <workItem from="1548165444503" duration="2599000" />
+      <workItem from="1548574549158" duration="3336000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48849000" />
+    <option name="totallyTimeSpent" value="52910000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -182,10 +212,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="984" y="0" width="943" height="1087" extended-state="0" />
-    <editor active="true" />
+    <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.29331824" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29327452" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -195,7 +224,7 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2735849" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27102804" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -221,29 +250,15 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="new structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="new structure" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Lesson2.java">
+    <entry file="file://$PROJECT_DIR$/src/Lesson1/Lesson1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="21" column="59" selection-start-line="21" selection-start-column="59" selection-end-line="21" selection-end-column="59" />
-          <folding>
-            <element signature="method#printArray#0;class#Lesson2#0" />
-            <element signature="method#printArray#1;class#Lesson2#0" />
-            <element signature="method#Task1#0;class#Lesson2#0" />
-            <element signature="method#Task2#0;class#Lesson2#0" />
-            <element signature="method#Task3#0;class#Lesson2#0" />
-            <element signature="method#Task4#0;class#Lesson2#0" />
-            <element signature="method#Task5#0;class#Lesson2#0" />
-            <element signature="method#Task6#0;class#Lesson2#0" />
-            <element signature="method#Task7#0;class#Lesson2#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Lesson1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="51" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding>
             <element signature="method#Task5#0;class#Lesson1#0" />
             <element signature="method#Task8#0;class#Lesson1#0" />
@@ -252,27 +267,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MyClass.java">
+    <entry file="file://$PROJECT_DIR$/src/Lesson1/MyClass.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Lesson1/MyClass.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Lesson3.java">
+    <entry file="file://$PROJECT_DIR$/src/Lesson3/Lesson3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="79" column="25" lean-forward="true" selection-start-line="79" selection-start-column="25" selection-end-line="79" selection-end-column="25" />
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#main#0;class#Lesson3#0" />
             <element signature="method#initMap#0;class#Lesson3#0" />
             <element signature="method#printMap#0;class#Lesson3#0" />
             <element signature="method#humanTurn#0;class#Lesson3#0" />
+            <element signature="method#computerTurn#0;class#Lesson3#0" />
             <element signature="method#isCellValid#0;class#Lesson3#0" />
             <element signature="method#isEndGame#0;class#Lesson3#0" />
             <element signature="method#checkWin#0;class#Lesson3#0" />
             <element signature="method#isMapFull#0;class#Lesson3#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Lesson2/Lesson2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-606">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Lesson4/Employee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="115" selection-start-line="17" selection-start-column="115" selection-end-line="17" selection-end-column="115" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Lesson4/MainClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>
